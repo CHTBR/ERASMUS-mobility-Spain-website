@@ -7,6 +7,7 @@
   --footer: #5a5353;
 }
 
+/* FONTS */
 @font-face {
   font-family: "Fira Sans Medium";
   src: url("fonts/Fira_Sans/FiraSans-Medium.ttf");
@@ -23,4 +24,15 @@ p,
 a,
 span {
   font-family: sans-serif;
+}
+
+/* BODY */
+html {
+  width: 100vw;
+  background-color: var(--background);
+}
+
+body {
+  width: 80vw;
+  min-width: 800px;
 }
