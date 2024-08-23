@@ -1,6 +1,7 @@
 :root {
   --header: #219e50;
   --navigation: #82cb7d;
+  --navigation-light: #b1e2ad;
   --background: #f3de9f;
   --about-section: #ebe863;
   --members-section: #fffd93;
@@ -106,6 +107,28 @@ h1 {
   align-items: center;
   justify-content: space-around;
   padding: 2.5vw 10px;
+}
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+nav a {
+  background-color: var(--navigation);
+  text-align: center;
+  flex: 1;
+  padding: 2vh 0;
+  color: white;
+  text-decoration: none;
+  font-size: 2vw;
+}
+
+nav a:hover {
+  flex: 1.5;
+  color: black;
+  background-color: var(--navigation-light);
 }
 
 footer img {
