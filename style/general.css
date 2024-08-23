@@ -21,9 +21,7 @@ h4 {
   font-family: "Fira Sans Medium";
 }
 
-p,
-a,
-span {
+body {
   font-family: sans-serif;
 }
 
@@ -63,7 +61,7 @@ h1 {
   text-align: center;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 750px) {
   header img {
     width: 15vw
   }
@@ -131,9 +129,89 @@ nav a:hover {
   background-color: var(--navigation-light);
 }
 
-footer img {
-  height: 3vw;
+
+/* FOOTER */
+footer {
+  background-color: var(--footer);
+  color: white;
+  padding: 2vh;
+  padding-bottom: 0;
+  display: flex;
+  flex-flow: column nowrap;
 }
+
+footer div {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 1vw;
+}
+
+footer small {
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  footer {
+    font-size: 0.8em;
+  }
+
+  footer img[src="img/logos/school-logo.png"] {
+    height: 9vw;
+  }
+  
+  footer img[src="img/logos/funded-by-eu-logo.png"] {
+    height: 11vw;
+  }
+}
+
+@media (max-width: 700px) {
+  #information {
+    flex-direction: column;
+  }
+
+  footer {
+    font-size: 1.3vh;
+  }
+
+  footer img[src="img/logos/school-logo.png"] {
+    height: 7vh;
+  }
+  
+  footer img[src="img/logos/funded-by-eu-logo.png"] {
+    height: 11vh;
+  }
+}
+
+@media (min-width: 1000px) {
+  footer {
+    font-size: 0.8em;
+  }
+
+  footer img[src="img/logos/school-logo.png"] {
+    height: 7vw;
+  }
+  
+  footer img[src="img/logos/funded-by-eu-logo.png"] {
+    height: 9vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  footer {
+    font-size: 0.8em;
+  }
+
+  footer img[src="img/logos/school-logo.png"] {
+    height: 5vw;
+  }
+  
+  footer img[src="img/logos/funded-by-eu-logo.png"] {
+    height: 7vw;
+  }
+}
+
+
 
 main img {
   height: 3vw;
