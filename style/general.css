@@ -8,6 +8,7 @@
   --footer: #5a5353;
 }
 
+
 /* FONTS */
 @font-face {
   font-family: "Fira Sans Medium";
@@ -24,6 +25,7 @@ h4 {
 body {
   font-family: sans-serif;
 }
+
 
 /* BODY */
 html {
@@ -50,21 +52,22 @@ body {
 }
 
 
-
 /* HEADER */
 header {
   background-color: var(--header);
 }
 
+#name {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2.5vw 10px;
+}
+
 h1 {
   font-size: 4vw;
   text-align: center;
-}
-
-@media (max-width: 750px) {
-  header img {
-    width: 15vw
-  }
 }
 
 @media (max-width: 1000px) {
@@ -75,6 +78,12 @@ h1 {
 
   #name {
     gap: 2vh;
+  }
+}
+
+@media (max-width: 750px) {
+  header img {
+    width: 15vw
   }
 }
 
@@ -99,13 +108,6 @@ h1 {
   }
 }
 
-#name {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-around;
-  padding: 2.5vw 10px;
-}
 
 /* NAVIGATION */
 nav {
