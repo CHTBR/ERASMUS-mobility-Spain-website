@@ -8,7 +8,7 @@
 #about-the-project {
   background-color: var(--about-section);
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   justify-content: space-between;
   align-items: center;
   gap: 5%;
@@ -16,7 +16,6 @@
 }
 
 #about-the-project div {
-  max-width: 40%;
   gap: 2vh;
 }
 
@@ -33,6 +32,11 @@
 @media (min-width: 1000px) {
   #about-the-project {
     padding: 4.5vh;
+    flex-flow: row nowrap;
+  }
+
+  #about-the-project div {
+    max-width: 40%;
   }
 
   #about-the-project h2 {
