@@ -27,7 +27,6 @@ body {
 
 /* BODY */
 html {
-  width: 100vw;
   background-color: var(--background);
   justify-content: center;
 }
