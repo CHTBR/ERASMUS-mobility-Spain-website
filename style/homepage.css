@@ -1,4 +1,35 @@
 :root {
   --about-section: #ebe863;
   --members-section: #fffd93;
+  --shadow: #64646480;
+}
+
+/* ABOUT SECTION */
+#about-the-project {
+  background-color: var(--about-section);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5%;
+  padding: 6vh;
+}
+
+#about-the-project div {
+  max-width: 40%;
+  gap: 2vh;
+}
+
+#about-the-project h2 {
+  font-size: 2vw;
+}
+
+#about-the-project p {
+  line-height: 1.5em;
+  font-size: 1vw;
+}
+
+#about-the-project img {
+  max-height: 20vw; 
+  box-shadow: 10px 8px var(--shadow);
 }
