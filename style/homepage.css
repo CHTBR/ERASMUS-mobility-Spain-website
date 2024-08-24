@@ -27,7 +27,28 @@
   line-height: 1.5em;
 }
 
+@media (max-width: 1000px) {
+  #about-the-project {
+    padding: 4vw;
+  }
 
+  #about-the-project div {
+    margin-bottom: 1vh;
+  }
+
+  #about-the-project h2 {
+    font-size: 3vh;
+  }
+
+  #about-the-project p {
+    font-size: 1.7vh;
+  }
+
+  #about-the-project img {
+    max-height: 47vw; 
+    box-shadow: 10px 8px var(--shadow);
+  }
+}
 
 @media (min-width: 1000px) {
   #about-the-project {
