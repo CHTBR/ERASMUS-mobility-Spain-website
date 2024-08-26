@@ -5,6 +5,25 @@
   --shadow: #64646480;
 }
 
+/* MAIN */
+@media (max-width: 1000px) {
+  main section {
+    padding: 4vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  main section {
+    padding: 4.5vh;
+  }
+}
+
+@media (min-width: 1400px) {
+  main section {
+    padding: 6vh;
+  }
+}
+
 /* ABOUT SECTION */
 #about-the-project {
   background-color: var(--about-section);
@@ -13,7 +32,6 @@
   justify-content: space-between;
   align-items: center;
   gap: 5%;
-  padding: 6vh;
 }
 
 #about-the-project div {
@@ -30,7 +48,7 @@
 
 @media (max-width: 1000px) {
   #about-the-project {
-    padding: 4vw;
+    text-align: center;
   }
 
   #about-the-project div {
@@ -53,7 +71,6 @@
 
 @media (min-width: 1000px) {
   #about-the-project {
-    padding: 4.5vh;
     flex-flow: row nowrap;
   }
 
@@ -76,10 +93,6 @@
 }
 
 @media (min-width: 1400px) {
-  #about-the-project {
-    padding: 6vh;
-  }
-
   #about-the-project h2 {
     font-size: 2vw;
   }
@@ -104,7 +117,7 @@
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
-  padding: 5vw 2vh;
+  padding: 0 2vh;
   gap: 3vw;
 }
 
@@ -112,14 +125,6 @@
   #members .card-container {
     flex-flow: column nowrap;
   }
-}
-
-#members h2 {
-  font-size: 2vw;
-}
-
-#members h3 {
-  font-size: 1.5vw;
 }
 
 .card {
@@ -134,7 +139,6 @@
   border-radius: 20px;
   box-shadow: 8px 6px var(--shadow);
 }
-
 
 #teacher-cards .card {
   flex: 1 1 auto;
@@ -158,5 +162,45 @@
   flex: 1 1 auto;
   min-width: 75px;
   max-width: 100px;
+}
+
+#members h2,
+#members h3 {
+  text-align: center;
+}
+
+#members h3 {
+  margin: 2vh;
+}
+
+@media (max-width: 1000px) {
+  #members h2 {
+    font-size: 3vh;
+  }
+
+  #members h3 {
+    font-size: 2vh;
+    margin: 2em;
+  }
+}
+
+@media (min-width: 1000px) {
+  #members h2 {
+    font-size: 3vw;
+  }
+
+  #members h3 {
+    font-size: 2vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  #members h2 {
+    font-size: 2vw;
+  }
+
+  #members h3 {
+    font-size: 1.5vw;
+  }
 }
 
