@@ -1,6 +1,7 @@
 :root {
   --about-section: #ebe863;
   --members-section: #fffd93;
+  --non-blinding-white: #ffffff;
   --shadow: #64646480;
 }
 
@@ -92,3 +93,70 @@
     box-shadow: 10px 8px var(--shadow);
   }
 }
+
+/* MEMBERS SECTION */
+#members {
+  background-color: var(--members-section);
+}
+
+#members .card-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5vw 2vh;
+  gap: 3vw;
+}
+
+@media (max-width: 740px) {
+  #members .card-container {
+    flex-flow: column nowrap;
+  }
+}
+
+#members h2 {
+  font-size: 2vw;
+}
+
+#members h3 {
+  font-size: 1.5vw;
+}
+
+.card {
+  padding: 15px 20px;
+  background-color: var(--non-blinding-white);
+  display: flex;
+  aspect-ratio: 16/7;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+  box-shadow: 8px 6px var(--shadow);
+}
+
+
+#teacher-cards .card {
+  flex: 1 1 auto;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+#teacher-cards .card img {
+  flex: 1 1 auto;
+  min-width: 100px;
+  max-width: 150px;
+}
+
+#student-cards .card {
+  flex: 1 1 auto;
+  min-width: 225px;
+  max-width: 300px;
+}
+
+#student-cards .card img {
+  flex: 1 1 auto;
+  min-width: 75px;
+  max-width: 100px;
+}
+
