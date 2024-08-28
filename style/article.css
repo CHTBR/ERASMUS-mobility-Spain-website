@@ -66,3 +66,25 @@ h3 {
   }
 }
 
+/* TEXT */
+main p {
+  line-height: 1.5em;
+}
+
+@media (max-width: 1000px) {
+  main p {
+    font-size: 1.7vh;
+  }
+}
+
+@media (min-width: 1000px) {
+  main p {
+    font-size: 1.3vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  main p {
+    font-size: 1vw;
+  }
+}
