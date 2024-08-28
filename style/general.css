@@ -132,6 +132,16 @@ nav a:hover {
   background-color: var(--navigation-light);
 }
 
+#current-page-link {
+  background-color: grey;
+}
+
+#current-page-link:hover {
+  flex: 1;
+  color: white;
+  background-color: grey;
+}
+
 
 /* FOOTER */
 footer {
