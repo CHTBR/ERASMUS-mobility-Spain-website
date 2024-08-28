@@ -1,0 +1,7 @@
+:root {
+  --main-content-color: #fffd93;
+}
+
+main {
+  background-color: var(--main-content-color);
+}
