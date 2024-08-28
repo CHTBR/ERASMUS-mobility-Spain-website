@@ -25,4 +25,44 @@ main {
   }
 }
 
+/* HEADINGS */
+h2 {
+  margin-bottom: 2vh;
+}
+
+h3 {
+  margin: 2vh 0;
+}
+
+@media (max-width: 1000px) {
+  h2 {
+    font-size: 3vh;
+    margin-top: 2em;
+  }
+
+  h3 {
+    font-size: 2vh;
+    margin: 2em 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  h2 {
+    font-size: 3vw;
+  }
+
+  h3 {
+    font-size: 2vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  h2 {
+    font-size: 2vw;
+  }
+
+  h3 {
+    font-size: 1.5vw;
+  }
+}
 
