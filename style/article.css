@@ -2,6 +2,27 @@
   --main-content-color: #fffd93;
 }
 
+/* MAIN */
 main {
   background-color: var(--main-content-color);
 }
+
+@media (max-width: 1000px) {
+  main {
+    padding: 4vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  main {
+    padding: 4.5vh;
+  }
+}
+
+@media (min-width: 1400px) {
+  main {
+    padding: 6vh;
+  }
+}
+
+
