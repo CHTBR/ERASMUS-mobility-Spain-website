@@ -26,11 +26,11 @@ main {
 }
 
 /* HEADINGS */
-h2 {
+main h2 {
   margin-bottom: 2vh;
 }
 
-h3 {
+main h3 {
   margin: 2vh 0;
 }
 
@@ -47,44 +47,44 @@ h3 {
 }
 
 @media (min-width: 1000px) {
-  h2 {
+  main h2 {
     font-size: 3vw;
   }
 
-  h3 {
+  main h3 {
     font-size: 2vw;
   }
 }
 
 @media (min-width: 1400px) {
-  h2 {
+  main h2 {
     font-size: 2vw;
   }
 
-  h3 {
+  main h3 {
     font-size: 1.5vw;
   }
 }
 
 /* TEXT */
-main p {
+main {
   line-height: 1.5em;
 }
 
 @media (max-width: 1000px) {
-  main p {
+  main {
     font-size: 1.7vh;
   }
 }
 
 @media (min-width: 1000px) {
-  main p {
+  main {
     font-size: 1.3vw;
   }
 }
 
 @media (min-width: 1400px) {
-  main p {
+  main {
     font-size: 1vw;
   }
 }
