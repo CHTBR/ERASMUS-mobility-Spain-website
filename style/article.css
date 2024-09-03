@@ -67,6 +67,10 @@ main h3 {
 }
 
 /* TEXT */
+#resources-list {
+  list-style: none;
+}
+
 main {
   line-height: 1.5em;
 }
