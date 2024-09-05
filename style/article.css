@@ -92,3 +92,8 @@ main {
     font-size: 1vw;
   }
 }
+
+/* IMAGES */
+figure img {
+  max-height: 26vw;
+}
