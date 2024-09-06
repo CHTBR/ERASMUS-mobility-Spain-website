@@ -127,5 +127,11 @@ main section.align-right {
 
 /* IMAGES */
 figure img {
-  max-height: 20vw;
+  max-height: 60vw;
+}
+
+@media (min-width: 1000px) {
+  figure img {
+    max-height: 20vw;
+  }
 }
