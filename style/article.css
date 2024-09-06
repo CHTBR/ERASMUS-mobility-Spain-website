@@ -101,11 +101,13 @@ main section {
 main section.align-left,
 main section.align-right {
   display: flex;
+  align-items: center;
   gap: 5%;
 }
 
 main section.align-left {
   flex-flow: row nowrap;
+  text-align: right;
 }
 
 main section.align-right {
