@@ -94,13 +94,21 @@ main {
 }
 
 /* SECTION LAYOUT */
-main section.align-left {
+main section {
+  margin-top: 5vh;
+}
+
+main section.align-left,
+main section.align-right {
   display: flex;
+  gap: 5%;
+}
+
+main section.align-left {
   flex-flow: row nowrap;
 }
 
 main section.align-right {
-  display: flex;
   flex-flow: row-reverse nowrap;
 }
 
