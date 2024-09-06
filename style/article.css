@@ -93,6 +93,17 @@ main {
   }
 }
 
+/* SECTION LAYOUT */
+main section.align-left {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+main section.align-right {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+}
+
 /* IMAGES */
 figure img {
   max-height: 26vw;
