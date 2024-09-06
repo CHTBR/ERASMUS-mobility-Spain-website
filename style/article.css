@@ -101,17 +101,28 @@ main section {
 main section.align-left,
 main section.align-right {
   display: flex;
+  flex-flow: column;
   align-items: center;
   gap: 5%;
 }
 
-main section.align-left {
-  flex-flow: row nowrap;
-  text-align: right;
+@media (max-width: 1000px) {
+  main section.align-left,
+  main section.align-right {
+    text-align: center;
+    gap: 5vh;
+  }
 }
 
-main section.align-right {
-  flex-flow: row-reverse nowrap;
+@media (min-width: 1000px) {
+  main section.align-left {
+    flex-flow: row nowrap;
+    text-align: right;
+  }
+
+  main section.align-right {
+    flex-flow: row-reverse nowrap;
+  }
 }
 
 /* IMAGES */
