@@ -2,6 +2,12 @@
   --main-content-color: #fffd93;
 }
 
+/* FONTS */
+@font-face {
+  font-family: "Bricolage Grotesque Bold";
+  src: url("fonts/Bricolage_Grotesque/static/BricolageGrotesque-Bold.ttf");
+}
+
 /* MAIN */
 main {
   background-color: var(--main-content-color);
@@ -27,6 +33,8 @@ main {
 
 /* HEADINGS */
 main h2 {
+  text-align: center;
+  font-family: "Bricolage Grotesque Bold";
   margin-bottom: 2vh;
 }
 
