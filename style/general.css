@@ -112,6 +112,7 @@ h1 {
 
 /* NAVIGATION */
 nav {
+  height: 8vh;
   display: flex;
   flex-flow: row nowrap;
 }
@@ -120,16 +121,27 @@ nav a {
   background-color: var(--navigation);
   text-align: center;
   flex: 1;
-  padding: 2vh 0;
+  padding: 0;
+  height: 8vh;
   color: white;
   text-decoration: none;
   font-size: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-nav a:hover {
+nav a:hover,
+nav .dropdown:hover {
   flex: 1.5;
   color: black;
   background-color: var(--navigation-light);
+}
+
+nav .dropdown:hover .dropbtn {
+  background-color: var(--navigation-light);
+  color: black;
+  border-bottom: 3px solid var(--header);
 }
 
 #current-page-link {
@@ -140,6 +152,37 @@ nav a:hover {
   flex: 1;
   color: white;
   background-color: grey;
+}
+
+nav .dropdown {
+  position: relative;
+  display: inline-block;
+  flex: 1;
+}
+
+nav .dropbtn {
+  border: none;
+  background-color: var(--navigation);
+  width: 100%;
+  height: 8vh;
+  padding: 0;
+  color: white;
+  font-size: 2vw;
+}
+
+nav .dropdown-content {
+  position: absolute;
+  text-align: right;
+  display: none;
+  z-index: 1;
+}
+
+nav .dropdown-content a {
+  width: 100%;
+}
+
+nav .dropdown:hover .dropdown-content {
+  display: block;
 }
 
 
