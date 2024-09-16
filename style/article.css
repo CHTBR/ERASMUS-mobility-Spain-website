@@ -143,3 +143,21 @@ figure img {
     max-height: 20vw;
   }
 }
+
+/* GALLERY */
+main .image-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3vh;
+}
+
+main .image-grid img {
+  width: 100%;
+}
+
+@media (min-width: 1000px) {
+  main .image-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
