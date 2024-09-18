@@ -161,3 +161,23 @@ main .image-grid img {
   }
 }
 
+main .image-grid figure {
+  position: relative;
+}
+
+main .image-grid figcaption {
+  display: none;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  line-height: 100%;
+  color: white;
+  background-color: #3b3939b0;
+  line-height: 2em;
+}
+
+main .image-grid figure:hover figcaption {
+  display: block;
+  left: 0;
+  top: 0;
+}
