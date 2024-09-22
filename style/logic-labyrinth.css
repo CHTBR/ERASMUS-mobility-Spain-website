@@ -1,0 +1,10 @@
+/* MAIN */
+main {
+  background-color: #ebe863;
+}
+
+/* IMAGE */
+main img {
+  margin: 2vw;
+  max-width: 40vw;
+}
