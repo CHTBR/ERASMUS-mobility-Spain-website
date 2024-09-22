@@ -173,6 +173,10 @@
   margin: 2vh;
 }
 
+#members img {
+  border-radius: 100px;
+}
+
 @media (max-width: 1000px) {
   #members h2 {
     font-size: 3vh;
@@ -203,4 +207,3 @@
     font-size: 1.5vw;
   }
 }
-
