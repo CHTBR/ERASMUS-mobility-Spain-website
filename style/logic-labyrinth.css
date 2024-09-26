@@ -4,7 +4,37 @@ main {
 }
 
 /* IMAGE */
-main img {
+#labyrinth-image {
   margin: 2vw;
   max-width: 40vw;
+}
+
+/* BUTTON */
+#start-button {
+  border: none;
+  color: white;
+  padding: 0.2em 0.5em;
+  background-color: #82cb7d;
+  font-size: 3vw;
+}
+
+#start-button:hover {
+  background-color: #b1e2ad;
+}
+
+#start-button:active {
+  background-color: #b1e2ad;
+  box-shadow: 5px 5px 0px #82cb7d inset;
+}
+
+@media (max-width: 1000px) {
+  #start-button {
+    font-size: 3vh;
+  }
+}
+
+@media (min-width: 1000px) {
+  #start-button {
+    font-size: 2vw;
+  }
 }
