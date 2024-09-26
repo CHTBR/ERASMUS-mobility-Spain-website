@@ -1,6 +1,8 @@
 /* MAIN */
 main {
   background-color: #ebe863;
+  display: flex;
+  justify-content: center;
 }
 
 /* IMAGE */
