@@ -61,14 +61,30 @@
       console.log(labyrinthControlsParent);
       console.log(startButton);
 
+      let leftButton = document.createElement("button");
+      leftButton.id = "left-button";
+      leftButton.textContent = "Question 1";
+      let rightButton = document.createElement("button");
+      rightButton.id = "right-button";
+      rightButton.textContent = "Question 2";
+
+      console.log(leftButton);
+      console.log(rightButton);
+
       labyrinthControlsParent.addEventListener("click", (event) => {
         console.log(event.target.id)
         switch(event.target.id) {
           case "start-button":
-            startButton.remove();
+            startGame();
             break;
         }
       });
+
+      function startGame() {
+        startButton.remove();
+        labyrinthControlsParent.appendChild(leftButton);
+        labyrinthControlsParent.appendChild(rightButton);
+      }
     </script>
   </body>
 </html>
