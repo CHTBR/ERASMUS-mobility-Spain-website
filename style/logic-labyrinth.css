@@ -35,7 +35,7 @@ main {
 
 #start-button:active {
   background-color: #b1e2ad;
-  box-shadow: 5px 5px 0px #82cb7d inset;
+  box-shadow: 5px 5px 0px #82cb7d inset, -5px -5px 0 #82cb7d inset;
 }
 
 @media (max-width: 1000px) {
