@@ -53,5 +53,22 @@
       </div>
       <small>Copyright</small>
     </footer>
+
+    <script>
+      let labyrinthControlsParent = document.getElementById("labyrinth-controls");
+      let startButton = document.getElementById("start-button");
+
+      console.log(labyrinthControlsParent);
+      console.log(startButton);
+
+      labyrinthControlsParent.addEventListener("click", (event) => {
+        console.log(event.target.id)
+        switch(event.target.id) {
+          case "start-button":
+            startButton.remove();
+            break;
+        }
+      });
+    </script>
   </body>
 </html>
