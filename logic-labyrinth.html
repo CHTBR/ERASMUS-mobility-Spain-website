@@ -71,6 +71,10 @@
       console.log(leftButton);
       console.log(rightButton);
 
+      let choiceButtonContainer = document.createElement("div");
+      choiceButtonContainer.appendChild(leftButton);
+      choiceButtonContainer.appendChild(rightButton);
+
       labyrinthControlsParent.addEventListener("click", (event) => {
         console.log(event.target.id)
         switch(event.target.id) {
@@ -82,8 +86,7 @@
 
       function startGame() {
         startButton.remove();
-        labyrinthControlsParent.appendChild(leftButton);
-        labyrinthControlsParent.appendChild(rightButton);
+        labyrinthControlsParent.appendChild(choiceButtonContainer);
       }
     </script>
   </body>
