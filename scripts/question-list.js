@@ -1,0 +1,47 @@
+let questionsList = [
+  "Diophantus’ youth lasted 1/6 of his life. His beard grew during another 1/12 of his life. After another 1/7 of his life, Diophantus got married. Five years later, he had a son. The son lived exactly 1/2 the length of his father’s life. Diophantus died 4 years after his son’s death. How long did Diophantus live?",
+  "Imagine you are standing on the riverbank and you need to get across to the other side with a wolf, a goat, and a cabbage. You have a raft that can only hold you and one other thing. If the wolf is left alone with the goat, the wolf will eat it, and if the goat is left alone with the cabbage, the goat will eat it. How do you get everyone across the river safely?",
+  [
+    "Jano, Fero, and Mišo meet. Among them, there is one honest person, one liar, and one trickster. The honest person always tells the truth, the liar always lies, and the trickster can tell the truth or lie.",
+    "Jano says: Mišo is the liar.",
+    "Fero says: Jano is the honest person.",
+    "Mišo says: I am the trickster.",
+    "Who is the honest person, who is the liar, and who is the trickster?",
+  ],
+  "Two fathers took their sons (each had one son) fishing. Each of them caught one fish, but when they got home, they had only three fish. None of the fish were released, lost, or eaten. How is this possible?",
+  "When I asked my friend how old he was, he told me: The day before yesterday I was 38, and next year I will be 41. Is this possible?",
+  "You are in a room with three switches. In the next room, there are three light bulbs that are off. Each switch corresponds to a different light bulb, and you cannot see from one room to the other. How can you determine which switch controls which light bulb if you can only enter the room with the bulbs once?",
+  [
+    "There are five houses in a row, each of a different color. In these houses live five people of different nationalities. Each of them has a different pet, drinks a different beverage, and smokes different cigarettes.",
+    "The Brit lives in the red house.",
+    "The Swede has a dog.",
+    "The Dane drinks tea.",
+    "The green house is immediately to the left of the white house.",
+    "The owner of the green house drinks coffee.",
+    "The person who smokes Pall Mall keeps birds.",
+    "The owner of the yellow house smokes Dunhill.",
+    "The person in the middle house drinks milk.",
+    "The Norwegian lives in the first house.",
+    "The person who smokes Blend lives next to the one who keeps a cat.",
+    "The person who keeps horses lives next to the one who smokes Dunhill.",
+    "The person who smokes Blue Master drinks beer.",
+    "The German smokes Prince.",
+    "The Norwegian lives next to the blue house.",
+    "The person who smokes Blend has a neighbor who drinks water.",
+    "Who keeps fish?",
+  ],
+  "Bacteria in a dish divide every minute into two, each with the same volume as the original. The dish was full at 12:00. When was it half full?",
+  "I am looking at someone's photograph. Guess who is in the picture if I have no siblings and the father of the man in the photograph is the son of my father.",
+];
+
+let questionsSolutionList = [
+  "1/6x + 1/12x + 1/7x + 5 + 1/2x + 4 = x => x = 84",
+  "Take the goat across first. Go back and take the wolf across. Leave the wolf, take the goat back with you, and then take the cabbage across. Finally, return to get the goat. Or: Take the goat across first. Go back and take the cabbage across. Leave the cabbage, take the goat back with you, and then take the wolf across. Finally, return to get the goat.",
+  "Fero cannot be the honest person, because if he was, then Jano would also have to be the honest person, since Fero, as the honest person, would always tell the truth. Mišo also cannot be the honest person because he would be lying by claiming to be the trickster. So, Jano is the honest person, who truthfully identified Mišo as the liar, and therefore, Fero must be the trickster. Jano is the honest person. Fero is the trickster. Mišo is the liar.",
+  "There were not four people fishing, but only three. The son, the father, and the grandfather.",
+  "It is possible if the friend was born on December 31st, and the conversation took place on January 1st. Then, on December 30th, he was 38 years old, on December 31st he had his birthday (39 years old), and since he will turn 40 this year, he will be 41 next year.",
+  "Turn one switch on and leave it on for a few minutes. Then, turn it off, turn on another switch, and go to the room with the bulbs. The bulb that is lit corresponds to the switch you just turned on, the warm bulb corresponds to the switch you turned on at the beginning, and the remaining bulb corresponds to the last switch.",
+  "The German keeps fish.",
+  "The dish was half full at 11:59, since it became full the next minute (12:00).",
+  "The person in the photograph is my son."
+];
