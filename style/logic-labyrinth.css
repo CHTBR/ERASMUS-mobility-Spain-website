@@ -17,23 +17,26 @@ main {
 }
 
 /* BUTTON */
-#start-button {
+button {
   border: none;
   color: white;
   padding: 0.2em 0.5em;
   background-color: #82cb7d;
   font-size: 3vw;
+}
+
+#start-button {
   position: absolute;
   transform: translate(-50%, 0);
   left: 50%;
   top: 50%;
 }
 
-#start-button:hover {
+button:hover {
   background-color: #b1e2ad;
 }
 
-#start-button:active {
+button:active {
   background-color: #b1e2ad;
   box-shadow: 5px 5px 0px #82cb7d inset, -5px -5px 0 #82cb7d inset;
 }
