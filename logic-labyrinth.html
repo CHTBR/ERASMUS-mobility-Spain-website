@@ -63,10 +63,10 @@
       let startButton = document.getElementById("start-button");
 
       let leftButton = document.createElement("button");
-      leftButton.id = "left-button";
+      leftButton.id = "0";
       leftButton.textContent = "Question 1";
       let rightButton = document.createElement("button");
-      rightButton.id = "right-button";
+      rightButton.id = "1";
       rightButton.textContent = "Question 2";
 
       let choiceButtonContainer = document.createElement("div");
@@ -85,7 +85,7 @@
       let solutionParagraph = document.getElementById("solution-paragraph")
 
       let gamePathArr = ["1.1", "1.2",
-        [["2.1", "e"], ["3.2",
+        [["2.1", "e"], ["3.1",
           [["4.1", "e"], ["5.1", "5.2", "5.3",
             [["6.1", "e"], ["7.1", "7.2",
               [["8.1", "8.2", "8.3", "e"], ["9.1", "9.2", "w"]]
@@ -93,7 +93,7 @@
           ]]
         ]]
       ];
-      let pathIndex = 0;
+      let pathIndex = 1;
       let parrentArr = gamePathArr;
       let currentArr = gamePathArr;
 
@@ -112,6 +112,10 @@
           case "next-button":
             nextQuestion();
             break;
+          case "0":
+          case "1":
+            chooseOption(parseInt(event.target.id));
+            break;
         }
       });
 
@@ -119,7 +123,7 @@
         startButton.remove();
         questionParagraph.textContent = questionsList[currentArr[pathIndex]];
         textContainer.appendChild(solutionButton);
-        currentImage = currentArr[pathIndex];
+        currentImage = currentArr[0];
         updateImage();
       }
 
@@ -133,17 +137,29 @@
         nextButton.remove();
         solutionParagraph.textContent = "";
         questionParagraph.textContent = "";
-        pathIndex += 1;
         currentImage = currentArr[pathIndex];
-        updateImage();
         if (Array.isArray(currentArr[pathIndex + 1])) {
           parrentArr = currentArr[pathIndex + 1];
-          pathIndex = 0;
+          pathIndex = -1;
           labyrinthControlsParent.appendChild(choiceButtonContainer);
         } else {
           questionParagraph.textContent = questionsList[currentArr[pathIndex]];
           textContainer.appendChild(solutionButton);
         }
+        pathIndex += 1;
+        updateImage();
+      }
+
+      function chooseOption(option) {
+        if (currentImage == "1.2" || currentImage == "7.2") {
+          option = Math.abs(option - 1);
+          console.log(option);
+        }
+        console.log(pathIndex);
+        currentArr = parrentArr[option];
+        choiceButtonContainer.remove();
+        questionParagraph.textContent = questionsList[currentArr[pathIndex]];
+        textContainer.appendChild(solutionButton);
       }
 
       function updateImage() {
