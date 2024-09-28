@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/general.css">
     <link rel="stylesheet" href="style/logic-labyrinth.css">
+    <script src="scripts/question-list.js"></script>
     <title>School | Poštová 9, Košice</title>
   </head>
   <body>
@@ -75,6 +76,8 @@
       choiceButtonContainer.appendChild(leftButton);
       choiceButtonContainer.appendChild(rightButton);
 
+      let questionParagraph = document.getElementById("question-paragraph")
+
       labyrinthControlsParent.addEventListener("click", (event) => {
         console.log(event.target.id)
         switch(event.target.id) {
@@ -87,6 +90,7 @@
       function startGame() {
         startButton.remove();
         labyrinthControlsParent.appendChild(choiceButtonContainer);
+        questionParagraph.textContent = questionsList[0];
       }
     </script>
   </body>
