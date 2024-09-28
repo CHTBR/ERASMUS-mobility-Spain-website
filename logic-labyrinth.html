@@ -72,6 +72,13 @@
       console.log(leftButton);
       console.log(rightButton);
 
+      let solutionButton = document.createElement("button");
+      solutionButton.id = "solution-button"
+      solutionButton.textContent = "Solution";
+      let nextButton = document.createElement("button");
+      nextButton.id = "next-button";
+      nextButton.textContent = "Next question";
+
       let choiceButtonContainer = document.createElement("div");
       choiceButtonContainer.appendChild(leftButton);
       choiceButtonContainer.appendChild(rightButton);
