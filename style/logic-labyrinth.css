@@ -2,7 +2,8 @@
 main {
   background-color: #ebe863;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
 }
 
 /* IMAGE */
@@ -19,7 +20,7 @@ main {
   align-items: center;
 }
 
-/* BUTTON */
+/* BUTTONS */
 button {
   border: none;
   color: white;
@@ -54,4 +55,10 @@ button:active {
   #start-button {
     font-size: 2vw;
   }
+}
+
+/* PARAGRAPHS */
+main p {
+  width: 60%;
+  margin: 5vh
 }
