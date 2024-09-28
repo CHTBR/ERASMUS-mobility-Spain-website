@@ -137,9 +137,16 @@
       function nextQuestion() {
         nextButton.remove();
         solutionParagraph.textContent = "";
+        questionParagraph.textContent = "";
         pathIndex += 1;
-        questionParagraph.textContent = questionsList[currentArr[pathIndex]];
-        textContainer.appendChild(solutionButton);
+        if (Array.isArray(currentArr[pathIndex + 1])) {
+          parrentArr = currentArr[pathIndex + 1];
+          pathIndex = 0;
+          labyrinthControlsParent.appendChild(choiceButtonContainer);
+        } else {
+          questionParagraph.textContent = questionsList[currentArr[pathIndex]];
+          textContainer.appendChild(solutionButton);
+        }
       }
     </script>
   </body>
