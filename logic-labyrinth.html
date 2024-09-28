@@ -84,6 +84,10 @@
       let questionParagraph = document.getElementById("question-paragraph")
       let solutionParagraph = document.getElementById("solution-paragraph")
 
+      let returnButton = document.createElement("button");
+      returnButton.id = "return-button";
+      returnButton.textContent = "Return to correct path";
+
       let gamePathArr = ["1.1", "1.2",
         [["2.1", "e"], ["3.1",
           [["4.1", "e"], ["5.1", "5.2", "5.3",
@@ -111,6 +115,9 @@
             break;
           case "next-button":
             nextQuestion();
+            break;
+          case "return-button":
+            returnToCorrectPath();
             break;
           case "0":
           case "1":
@@ -142,6 +149,8 @@
           parrentArr = currentArr[pathIndex + 1];
           pathIndex = -1;
           labyrinthControlsParent.appendChild(choiceButtonContainer);
+        } else if (currentArr[pathIndex + 1] == "e") {
+          textContainer.appendChild(returnButton);
         } else {
           questionParagraph.textContent = questionsList[currentArr[pathIndex]];
           textContainer.appendChild(solutionButton);
@@ -160,6 +169,13 @@
         choiceButtonContainer.remove();
         questionParagraph.textContent = questionsList[currentArr[pathIndex]];
         textContainer.appendChild(solutionButton);
+      }
+
+      function returnToCorrectPath() {
+        returnButton.remove();
+        currentArr = parrentArr[1];
+        pathIndex = 0;
+        nextQuestion();
       }
 
       function updateImage() {
