@@ -42,10 +42,6 @@
   margin-bottom: 1em;
 }
 
-#about-the-project p {
-  line-height: 1.5em;
-}
-
 @media (max-width: 1000px) {
   #about-the-project {
     text-align: center;
@@ -57,10 +53,6 @@
 
   #about-the-project h2 {
     font-size: 3vh;
-  }
-
-  #about-the-project p {
-    font-size: 1.7vh;
   }
 
   #about-the-project img {
@@ -82,10 +74,6 @@
     font-size: 3vw;
   }
 
-  #about-the-project p {
-    font-size: 1.3vw;
-  }
-
   #about-the-project img {
     max-height: 26vw; 
     box-shadow: 10px 8px var(--shadow);
@@ -95,10 +83,6 @@
 @media (min-width: 1400px) {
   #about-the-project h2 {
     font-size: 2vw;
-  }
-
-  #about-the-project p {
-    font-size: 1vw;
   }
 
   #about-the-project img {

@@ -74,33 +74,6 @@ main h3 {
   }
 }
 
-/* TEXT */
-#resources-list {
-  list-style: none;
-}
-
-main {
-  line-height: 1.5em;
-}
-
-@media (max-width: 1000px) {
-  main {
-    font-size: 1.7vh;
-  }
-}
-
-@media (min-width: 1000px) {
-  main {
-    font-size: 1.3vw;
-  }
-}
-
-@media (min-width: 1400px) {
-  main {
-    font-size: 1vw;
-  }
-}
-
 /* SECTION LAYOUT */
 main section {
   margin-top: 5vh;
