@@ -107,11 +107,14 @@
 
       let imageFolderPath = "img/content/logic-labyrinth/"
 
-      labyrinthControlsParent.addEventListener("click", (event) => {
+      document.querySelector("main").addEventListener("click", (event) => {
         console.log(event.target.id)
         switch(event.target.id) {
           case "start-button":
             startGame();
+            break;
+          case "solution-button":
+            showSolution();
             break;
         }
       });
@@ -119,6 +122,12 @@
       function startGame() {
         startButton.remove();
         questionParagraph.textContent = questionsList[currentArr[pathIndex]];
+        textContainer.appendChild(solutionButton);
+      }
+
+      function showSolution() {
+        solutionButton.remove();
+        solutionParagraph.textContent = solutionsList[currentArr[pathIndex]];
       }
     </script>
   </body>

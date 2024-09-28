@@ -34,7 +34,7 @@ let questionsList = {
   "6.1": "I am looking at someone's photograph. Guess who is in the picture if I have no siblings and the father of the man in the photograph is the son of my father.",
 };
 
-let questionsSolutionList = {
+let solutionsList = {
   "1.1": "1/6x + 1/12x + 1/7x + 5 + 1/2x + 4 = x => x = 84",
   "1.2": "Take the goat across first. Go back and take the wolf across. Leave the wolf, take the goat back with you, and then take the cabbage across. Finally, return to get the goat. Or: Take the goat across first. Go back and take the cabbage across. Leave the cabbage, take the goat back with you, and then take the wolf across. Finally, return to get the goat.",
   "2.1": "Fero cannot be the honest person, because if he was, then Jano would also have to be the honest person, since Fero, as the honest person, would always tell the truth. Mišo also cannot be the honest person because he would be lying by claiming to be the trickster. So, Jano is the honest person, who truthfully identified Mišo as the liar, and therefore, Fero must be the trickster. Jano is the honest person. Fero is the trickster. Mišo is the liar.",
