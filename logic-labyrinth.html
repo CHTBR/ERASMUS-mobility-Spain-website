@@ -30,7 +30,7 @@
 
     <main>
       <div id="labyrinth-controls">
-        <img src="img/content/logic-labyrinth/maze-start.png" alt="Image of a labyrinth with the player in the middle." id="labyrinth-image">
+        <img src="img/content/logic-labyrinth/0.png" alt="Image of a labyrinth with the player in the middle." id="labyrinth-image">
         <button id="start-button">START</button>
       </div>
       <div id="text-container">
@@ -97,7 +97,8 @@
       let parrentArr = gamePathArr;
       let currentArr = gamePathArr;
 
-      let imageFolderPath = "img/content/logic-labyrinth/"
+      let currentImage = "0"
+      let image = document.getElementById("labyrinth-image")
 
       document.querySelector("main").addEventListener("click", (event) => {
         console.log(event.target.id)
@@ -118,6 +119,8 @@
         startButton.remove();
         questionParagraph.textContent = questionsList[currentArr[pathIndex]];
         textContainer.appendChild(solutionButton);
+        currentImage = currentArr[pathIndex];
+        updateImage();
       }
 
       function showSolution() {
@@ -131,6 +134,8 @@
         solutionParagraph.textContent = "";
         questionParagraph.textContent = "";
         pathIndex += 1;
+        currentImage = currentArr[pathIndex];
+        updateImage();
         if (Array.isArray(currentArr[pathIndex + 1])) {
           parrentArr = currentArr[pathIndex + 1];
           pathIndex = 0;
@@ -139,6 +144,10 @@
           questionParagraph.textContent = questionsList[currentArr[pathIndex]];
           textContainer.appendChild(solutionButton);
         }
+      }
+
+      function updateImage() {
+        image.src = "img/content/logic-labyrinth/" + currentImage + ".png";
       }
     </script>
   </body>
