@@ -1,6 +1,5 @@
 let questionsList = {
   "1.1": "Diophantus’ youth lasted 1/6 of his life. His beard grew during another 1/12 of his life. After another 1/7 of his life, Diophantus got married. Five years later, he had a son. The son lived exactly 1/2 the length of his father’s life. Diophantus died 4 years after his son’s death. How long did Diophantus live?",
-  "1.2": "Imagine you are standing on the riverbank and you need to get across to the other side with a wolf, a goat, and a cabbage. You have a raft that can only hold you and one other thing. If the wolf is left alone with the goat, the wolf will eat it, and if the goat is left alone with the cabbage, the goat will eat it. How do you get everyone across the river safely?",
   "2.1" : [
     "Jano, Fero, and Mišo meet. Among them, there is one honest person, one liar, and one trickster. The honest person always tells the truth, the liar always lies, and the trickster can tell the truth or lie.",
     "Jano says: Mišo is the liar.",
@@ -32,16 +31,29 @@ let questionsList = {
   ],
   "5.3": "Bacteria in a dish divide every minute into two, each with the same volume as the original. The dish was full at 12:00. When was it half full?",
   "6.1": "I am looking at someone's photograph. Guess who is in the picture if I have no siblings and the father of the man in the photograph is the son of my father.",
+  "7.1": "There are 20 people in a room, and each person shakes hands with every other person. How many handshakes will take place?",
+  "7.2": "How can you measure exactly 4 liters of water if you only have two measuring containers with capacities of 5 and 3 liters?",
+  "8.1": "Two ducks stand in front of two other ducks, two stand behind two other ducks, and two are next to two other ducks. How many ducks are there in total?",
+  "8.2": "If you are standing 10 meters away from a door and with each movement towards it, you halve the distance, after how many moves will you reach the door?",
+  "9.1": "If the same book is the fourth from the left and the sixth from the right on the shelf, how many books are there in total?",
+  "9.2": "Which three positive numbers have the same sum and product?",
+  "9.3": "Imagine you are standing on the riverbank and you need to get across to the other side with a wolf, a goat, and a cabbage. You have a raft that can only hold you and one other thing. If the wolf is left alone with the goat, the wolf will eat it, and if the goat is left alone with the cabbage, the goat will eat it. How do you get everyone across the river safely?",
 };
 
 let solutionsList = {
   "1.1": "1/6x + 1/12x + 1/7x + 5 + 1/2x + 4 = x => x = 84",
-  "1.2": "Take the goat across first. Go back and take the wolf across. Leave the wolf, take the goat back with you, and then take the cabbage across. Finally, return to get the goat. Or: Take the goat across first. Go back and take the cabbage across. Leave the cabbage, take the goat back with you, and then take the wolf across. Finally, return to get the goat.",
   "2.1": "Fero cannot be the honest person, because if he was, then Jano would also have to be the honest person, since Fero, as the honest person, would always tell the truth. Mišo also cannot be the honest person because he would be lying by claiming to be the trickster. So, Jano is the honest person, who truthfully identified Mišo as the liar, and therefore, Fero must be the trickster. Jano is the honest person. Fero is the trickster. Mišo is the liar.",
   "3.1": "There were not four people fishing, but only three. The son, the father, and the grandfather.",
   "4.1": "It is possible if the friend was born on December 31st, and the conversation took place on January 1st. Then, on December 30th, he was 38 years old, on December 31st he had his birthday (39 years old), and since he will turn 40 this year, he will be 41 next year.",
   "5.1": "Turn one switch on and leave it on for a few minutes. Then, turn it off, turn on another switch, and go to the room with the bulbs. The bulb that is lit corresponds to the switch you just turned on, the warm bulb corresponds to the switch you turned on at the beginning, and the remaining bulb corresponds to the last switch.",
   "5.2": "The German keeps fish.",
   "5.3": "The dish was half full at 11:59, since it became full the next minute (12:00).",
-  "6.1": "The person in the photograph is my son."
+  "6.1": "The person in the photograph is my son.",
+  "7.1": "19 + 18 + ... + 2 + 1 = 190",
+  "7.2": "First, you fill the 5-liter container and pour 3 liters into the second container, then empty it. Pour the remaining 2 liters from the 5-liter container into the 3-liter one. Then, fill the larger container again and pour from it into the smaller container until it’s full, which will take exactly 1 liter. So, there will be 4 liters left in the large container.",
+  "8.1": "4, arranged in the shape of a square.",
+  "8.2": "Never, because you will always be halving the previous distance from the door.",
+  "9.1": "9",
+  "9.2": "1, 2, 3",
+  "9.3": "Take the goat across first. Go back and take the wolf across. Leave the wolf, take the goat back with you, and then take the cabbage across. Finally, return to get the goat. Or: Take the goat across first. Go back and take the cabbage across. Leave the cabbage, take the goat back with you, and then take the wolf across. Finally, return to get the goat.",
 };

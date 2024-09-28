@@ -105,6 +105,8 @@
       let parrentArr = gamePathArr;
       let currentArr = gamePathArr;
 
+      let currentOption = "1.1";
+
       let currentImage = "0"
       let image = document.getElementById("labyrinth-image")
 
@@ -135,7 +137,8 @@
 
       function startGame() {
         startButton.remove();
-        questionParagraph.textContent = questionsList[currentArr[pathIndex]];
+        questionParagraph.textContent = questionsList["1.1"];
+        currentOption = "1.1";
         textContainer.appendChild(solutionButton);
         currentImage = currentArr[0];
         updateImage();
@@ -143,7 +146,7 @@
 
       function showSolution() {
         solutionButton.remove();
-        solutionParagraph.textContent = solutionsList[currentArr[pathIndex]];
+        solutionParagraph.textContent = solutionsList[currentOption];
         textContainer.appendChild(nextButton);
       }
 
@@ -154,7 +157,6 @@
         currentImage = currentArr[pathIndex];
         if (Array.isArray(currentArr[pathIndex + 1])) {
           parrentArr = currentArr[pathIndex + 1];
-          pathIndex = -1;
           labyrinthControlsParent.appendChild(choiceButtonContainer);
         } else if (currentArr[pathIndex + 1] == "e") {
           textContainer.appendChild(returnButton);
@@ -162,10 +164,11 @@
           textContainer.appendChild(winButton);
           console.log("win");
         } else {
+          pathIndex += 1;
           questionParagraph.textContent = questionsList[currentArr[pathIndex]];
+          currentOption = currentArr[pathIndex];
           textContainer.appendChild(solutionButton);
         }
-        pathIndex += 1;
         updateImage();
       }
 
@@ -174,10 +177,11 @@
           option = Math.abs(option - 1);
           console.log(option);
         }
-        console.log(pathIndex);
+        pathIndex = 0;
         currentArr = parrentArr[option];
         choiceButtonContainer.remove();
         questionParagraph.textContent = questionsList[currentArr[pathIndex]];
+        currentOption = currentArr[pathIndex];
         textContainer.appendChild(solutionButton);
       }
 
@@ -195,7 +199,7 @@
         currentImage = "0";
         updateImage();
         labyrinthControlsParent.appendChild(startButton);
-        pathIndex = 0;
+        pathIndex = 1;
       }
 
       function updateImage() {
