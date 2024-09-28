@@ -64,6 +64,7 @@ main p {
 }
 
 #text-container {
+  padding: 1vh;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
