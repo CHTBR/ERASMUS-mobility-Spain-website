@@ -116,6 +116,9 @@
           case "solution-button":
             showSolution();
             break;
+          case "next-button":
+            nextQuestion();
+            break;
         }
       });
 
@@ -128,6 +131,15 @@
       function showSolution() {
         solutionButton.remove();
         solutionParagraph.textContent = solutionsList[currentArr[pathIndex]];
+        textContainer.appendChild(nextButton);
+      }
+
+      function nextQuestion() {
+        nextButton.remove();
+        solutionParagraph.textContent = "";
+        pathIndex += 1;
+        questionParagraph.textContent = questionsList[currentArr[pathIndex]];
+        textContainer.appendChild(solutionButton);
       }
     </script>
   </body>
