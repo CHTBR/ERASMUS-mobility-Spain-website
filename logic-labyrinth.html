@@ -78,6 +78,21 @@
 
       let questionParagraph = document.getElementById("question-paragraph")
 
+      let gamePathArr = ["1.1", "1.2",
+        [["2.1", "e"], ["3.2",
+          [["4.1", "e"], ["5.1", "5.2", "5.3",
+            [["6.1", "e"], ["7.1", "7.2",
+              [["8.1", "8.2", "8.3", "e"], ["9.1", "9.2", "w"]]
+            ]]
+          ]]
+        ]]
+      ];
+      let pathIndex = 0;
+      let parrentArr = gamePathArr;
+
+      console.log(gamePathArr);
+
+
       labyrinthControlsParent.addEventListener("click", (event) => {
         console.log(event.target.id)
         switch(event.target.id) {
