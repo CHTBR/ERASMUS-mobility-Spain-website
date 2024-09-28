@@ -88,11 +88,15 @@
       returnButton.id = "return-button";
       returnButton.textContent = "Return to correct path";
 
+      let winButton = document.createElement("button");
+      winButton.id = "win-button";
+      winButton.textContent = "Restart";
+
       let gamePathArr = ["1.1", "1.2",
         [["2.1", "e"], ["3.1",
           [["4.1", "e"], ["5.1", "5.2", "5.3",
             [["6.1", "e"], ["7.1", "7.2",
-              [["8.1", "8.2", "8.3", "e"], ["9.1", "9.2", "w"]]
+              [["8.1", "8.2", "8.3", "e"], ["9.1", "9.2", "9.3", "w"]]
             ]]
           ]]
         ]]
@@ -118,6 +122,9 @@
             break;
           case "return-button":
             returnToCorrectPath();
+            break;
+          case "win-button":
+            restartGame();
             break;
           case "0":
           case "1":
@@ -151,6 +158,9 @@
           labyrinthControlsParent.appendChild(choiceButtonContainer);
         } else if (currentArr[pathIndex + 1] == "e") {
           textContainer.appendChild(returnButton);
+        } else if (currentArr[pathIndex + 1] == "w") {
+          textContainer.appendChild(winButton);
+          console.log("win");
         } else {
           questionParagraph.textContent = questionsList[currentArr[pathIndex]];
           textContainer.appendChild(solutionButton);
@@ -176,6 +186,16 @@
         currentArr = parrentArr[1];
         pathIndex = 0;
         nextQuestion();
+      }
+
+      function restartGame() {
+        winButton.remove();
+        parrentArr = gamePathArr;
+        currentArr = gamePathArr;
+        currentImage = "0";
+        updateImage();
+        labyrinthControlsParent.appendChild(startButton);
+        pathIndex = 0;
       }
 
       function updateImage() {
