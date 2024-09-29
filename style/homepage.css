@@ -97,17 +97,16 @@
 }
 
 #members .card-container {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-around;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
   padding: 0 2vh;
   gap: 3vw;
 }
 
 @media (max-width: 740px) {
   #members .card-container {
-    flex-flow: column nowrap;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -115,13 +114,13 @@
   padding: 15px 20px;
   background-color: var(--non-blinding-white);
   display: flex;
-  aspect-ratio: 16/7;
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
   gap: 20px;
   border-radius: 20px;
   box-shadow: 8px 6px var(--shadow);
+  width: 100%;
 }
 
 #teacher-cards .card {
