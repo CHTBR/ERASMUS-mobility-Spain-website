@@ -12,6 +12,18 @@ main {
   max-width: 40vw;
 }
 
+@media (max-width: 1400px) {
+  #labyrinth-image {
+    max-width: 60vw
+  }
+}
+
+@media (max-width: 1000px) {
+  #labyrinth-image {
+    max-width: 90vw;
+  }
+}
+
 /* CONTROLS LAYOUT */
 #labyrinth-controls {
   position: relative;
