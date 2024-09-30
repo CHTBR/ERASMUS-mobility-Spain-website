@@ -32,6 +32,14 @@ main {
   align-items: center;
 }
 
+@media (max-width: 1000px) {
+  #choice-button-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+}
+
 /* BUTTONS */
 button {
   border: none;
