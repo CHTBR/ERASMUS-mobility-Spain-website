@@ -8,19 +8,19 @@
 /* MAIN */
 @media (max-width: 1000px) {
   main section {
-    padding: 4vw;
+    padding: 3vw;
   }
 }
 
 @media (min-width: 1000px) {
   main section {
-    padding: 4.5vh;
+    padding: 4vh;
   }
 }
 
 @media (min-width: 1400px) {
   main section {
-    padding: 6vh;
+    padding: 5vh;
   }
 }
 
@@ -124,26 +124,24 @@
 }
 
 #teacher-cards .card {
-  flex: 1 1 auto;
-  min-width: 300px;
+  min-width: 250px;
   max-width: 400px;
 }
 
 #teacher-cards .card img {
   flex: 1 1 auto;
-  min-width: 100px;
+  min-width: 75px;
   max-width: 150px;
 }
 
 #student-cards .card {
-  flex: 1 1 auto;
-  min-width: 225px;
+  min-width: 175px;
   max-width: 300px;
 }
 
 #student-cards .card img {
   flex: 1 1 auto;
-  min-width: 75px;
+  min-width: 50px;
   max-width: 100px;
 }
 
