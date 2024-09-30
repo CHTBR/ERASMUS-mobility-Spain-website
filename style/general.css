@@ -279,18 +279,18 @@ main {
 
 @media (max-width: 1000px) {
   main {
-    font-size: 1.7vh;
+    font-size: 2vh;
   }
 }
 
 @media (min-width: 1000px) {
   main {
-    font-size: 1.3vw;
+    font-size: 1.6vw;
   }
 }
 
 @media (min-width: 1400px) {
   main {
-    font-size: 1vw;
+    font-size: 1.3vw;
   }
 }
