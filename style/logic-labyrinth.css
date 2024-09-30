@@ -58,14 +58,14 @@ button:active {
 }
 
 @media (max-width: 1000px) {
-  #start-button {
-    font-size: 3vh;
+  button {
+    font-size: 6vh;
   }
 }
 
 @media (min-width: 1000px) {
-  #start-button {
-    font-size: 2vw;
+  button {
+    font-size: 4vw;
   }
 }
 
