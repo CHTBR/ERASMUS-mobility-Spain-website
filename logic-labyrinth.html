@@ -110,8 +110,11 @@
       let currentImage = "0"
       let image = document.getElementById("labyrinth-image")
 
+      let imgBool = false;
+      let unsolved_img = document.createElement("img");
+      let solved_img = document.createElement("img");
+
       document.querySelector("main").addEventListener("click", (event) => {
-        console.log(event.target.id)
         switch(event.target.id) {
           case "start-button":
             startGame();
@@ -146,12 +149,23 @@
 
       function showSolution() {
         solutionButton.remove();
-        solutionParagraph.textContent = solutionsList[currentOption];
         textContainer.appendChild(nextButton);
+        if (currentOption != "8.3") {
+          solutionParagraph.textContent = solutionsList[currentOption];
+        } else {
+          solved_img.src = solutionsList[currentOption];
+          textContainer.appendChild(solved_img);
+          imgBool = true;
+        }
       }
 
       function nextQuestion() {
         nextButton.remove();
+        if (imgBool) {
+          imgBool = false;
+          solved_img.remove();
+          unsolved_img.remove();
+        }
         solutionParagraph.textContent = "";
         questionParagraph.textContent = "";
         currentImage = currentArr[pathIndex];
@@ -162,12 +176,17 @@
           textContainer.appendChild(returnButton);
         } else if (currentArr[pathIndex + 1] == "w") {
           textContainer.appendChild(winButton);
-          console.log("win");
         } else {
           pathIndex += 1;
-          questionParagraph.textContent = questionsList[currentArr[pathIndex]];
           currentOption = currentArr[pathIndex];
           textContainer.appendChild(solutionButton);
+          if (currentArr[pathIndex] != "8.3") {
+            questionParagraph.textContent = questionsList[currentArr[pathIndex]];
+          } else {
+            questionParagraph.textContent = questionsList[currentArr[pathIndex]][0];
+            unsolved_img.src = questionsList[currentArr[pathIndex]][1];
+            textContainer.appendChild(unsolved_img);
+          }
         }
         updateImage();
       }
@@ -175,7 +194,6 @@
       function chooseOption(option) {
         if (currentImage == "1.2" || currentImage == "7.2") {
           option = Math.abs(option - 1);
-          console.log(option);
         }
         pathIndex = 0;
         currentArr = parrentArr[option];
