@@ -154,3 +154,7 @@ main .image-grid figure:hover figcaption {
   left: 0;
   top: 0;
 }
+
+main .image-grid a {
+  color: white;
+}
