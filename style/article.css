@@ -158,3 +158,16 @@ main .image-grid figure:hover figcaption {
 main .image-grid a {
   color: white;
 }
+
+/* QR Code */
+#qr-code-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#qr-code-container img {
+  width: 40vw;
+  margin: auto;
+}
