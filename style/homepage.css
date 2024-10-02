@@ -94,6 +94,10 @@
 /* MEMBERS SECTION */
 #members {
   background-color: var(--members-section);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 #members .card-container {
@@ -186,5 +190,19 @@
 
   #members h3 {
     font-size: 1.5vw;
+  }
+}
+
+/* VIDEO */
+#members video {
+  margin: 10vh;
+  width: 30vw;
+  height: 50vw;
+}
+
+@media (max-width: 1000px) {
+  #members video {
+    width: 60vw;
+    height: 80vw;
   }
 }
