@@ -100,7 +100,14 @@
   align-items: center;
 }
 
-#members .card-container {
+#members #teacher-cards .card-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 3vw;
+}
+
+#members #student-cards .card-container {
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr 1fr;
@@ -109,7 +116,7 @@
 }
 
 @media (max-width: 740px) {
-  #members .card-container {
+  #members #student-cards .card-container {
     grid-template-columns: 1fr;
   }
 }
